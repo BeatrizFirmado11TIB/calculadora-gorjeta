@@ -16,6 +16,7 @@
     --input-text: #00474B;
     --topaz: #26c2ae;
     --beetle-green: #547878;
+    --regent-grey: #7f9d9f;
 }
 body{
     font-size: 1.6rem;
@@ -108,4 +109,42 @@ main{
         }
        }
    }
+}
+.results{
+    background: #00474B;
+    border-radius: 1.5rem;
+    padding: 4rem 2rem 2.4rem;
+    
+
+    .amount,
+    .total{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.4rem;
+    }
+
+    p{
+        color: #FFF;
+        font-weight: 700;
+    }
+    span{
+        color: #7f9d9f;
+        font-size: 1.3rem;
+    }
+    strong{
+        font-size: 3.2rem;
+        color: #26c2ae;
+    }
+    button{
+        background: #26c2ae;
+        color: #00474B;
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        border: none;
+        border-radius: .5rem;
+        font-weight: 700;
+        padding-block: .9rem;
+    }
 }
