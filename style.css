@@ -14,6 +14,8 @@
     --strong-text: #5E7A7D;
     --bg-div: #F3F9FA;
     --input-text: #00474B;
+    --topaz: #26c2ae;
+    --beetle-green: #547878;
 }
 body{
     font-size: 1.6rem;
@@ -31,34 +33,79 @@ main{
     border-radius: 2.5 rem 2.5rem 0 0;
 }
 
-.info strong{
-    color: #5E7A7D;
-}
-
-.input-box{
-   margin-top: .6rem;
-   background: #F3F9FA;
-   padding: .6rem 1.8rem;
-   display: flex;
-   align-items: center;
-   border-radius: .5rem;
-
-
-     input{
-        border: none;
-        background: transparent;
-        text-align: right;
-        width: 100%;
-        outline: none;
-        font-size: 2.4rem;
-        font-weight: 700;
-        color: #00474B;
-
-        &::placeholder{
-            color: #00474B;
-            opacity: 0.35;
-
-        }
+.info {
+         margin-inline: .8rem;
+    div{
+       margin-bottom: 3.2rem;
+    }
+    
+    strong {
+        color: #5E7A7D;;
+    }
+    .input-box{
+        margin-top: .6rem;
+        background: #F3F9FA;
+        padding: .6rem 1.8rem;
+        display: flex;
+        align-items: center;
+        border-radius: .5rem;
+     
+     
+          input{
+             border: none;
+             background: transparent;
+             text-align: right;
+             width: 100%;
+             outline: none;
+             font-size: 2.4rem;
+             font-weight: 700;
+             color: #00474B;
+     
+             &::placeholder{
+                 color: #00474B;
+                 opacity: 0.35;
+     
+             }
+          }
      }
+     .input-box:has(input:focus){
+     outline: 2px solid #26c2ae;
 }
+   .tip{
+       div{
+        margin-top: 1.6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
 
+        button{
+         font-size: 2.4rem;
+         color: #FFF;
+         background: #00474B;
+         border: none;
+         padding-block: .6rem;
+         font-weight: 700;
+         border-radius: .5rem;
+        }
+
+        input{
+            width: 100%;
+            border: none;
+            background: #F3F9FA;
+            border-radius: .5rem;
+            font-size: 2.4rem;
+            font-weight: 700;
+            text-align: center;
+            color: #00474B;
+
+            &::placeholder{
+                color: #547878;
+            }
+
+            &:focus{
+                outline: 2px solid #26c2ae;
+            }
+        }
+       }
+   }
+}
