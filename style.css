@@ -153,6 +153,11 @@ main{
         padding-block: .9rem;
     }
 }
+
+input::-webkit-inner-spin-button
+    input::-webkit-outer-spin-button{
+        display: none;
+    }
 @media(min-width: 920px){
     main{
         display: flex;
@@ -165,11 +170,6 @@ main{
     section{
         width: 100%;
     }
-    input::-webkit-inner-spin-button
-    input::-webkit-outer-spin-button{
-        display: none;
-    }
-
 
     
      .info{
@@ -178,7 +178,7 @@ main{
                 grid-template-columns: repeat(3, 1fr);
 
                 button:hover{
-                    background: #26c2ae;
+                    background: #9FE8DF;
                     cursor: pointer;
                     transition: .3rem;
                 }
