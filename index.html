@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>4
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,7 @@
                     <button onclick="receiveTipPorcentage(15)" id="button-15">15%</button>
                     <button onclick="receiveTipPorcentage(25)" id="button-25">25%</button>
                     <button onclick="receiveTipPorcentage(50)" id="button-50">50%</button>
-                    <input type="number" id="custom-tip" placeholder="Custom">
+                    <input oninput="receiveCustomTipPorcentage()"type="number" id="custom-tip" placeholder="Custom">
                 </div>
             </div>
             
@@ -49,14 +49,14 @@
                 <p>
                     Tip Amount <br> <span> /person </span>
                 </p>
-              <strong>$4,27</strong>
+              <strong>$0,00</strong>
             </div>
 
             <div class="total">
                 <p>
                    Total <br> <span> /person </span>
                 </p>
-              <strong>$32,79</strong>
+              <strong>$0,00</strong>
             </div>
            </div>
             <button>Reset</button>
